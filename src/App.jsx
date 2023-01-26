@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import LinkList from "./components/LinkList";
 import "./App.css";
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <div>
       <Navbar />
       <Hero />
+      <LinkList />
     </div>
   );
 }
