@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import LinkList from "./components/LinkList";
 import Card from "./components/Card";
+import cardImage from "./img/cardImage.png";
 import "./App.css";
 
 function App() {
@@ -11,7 +12,14 @@ function App() {
       <Navbar />
       <Hero />
       <LinkList />
-      <Card />
+      <Card
+        img={cardImage}
+        rating={"5.0"}
+        reviewCount={6}
+        country="United States"
+        title="Plan The Perfect New York Vacation"
+        price={136}
+      />
     </div>
   );
 }
