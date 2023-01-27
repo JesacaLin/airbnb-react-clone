@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import LinkList from "./components/LinkList";
 import Card from "./components/Card";
+import MyExperience from "./components/MyExperience";
 import data from "./data";
 import "./App.css";
 
@@ -9,6 +10,7 @@ function App() {
   const cards = data.map((item) => {
     return (
       <Card
+        key={item.id}
         img={item.img}
         id={item.id}
         title={item.title}
@@ -25,6 +27,7 @@ function App() {
       <Hero />
       <LinkList />
       <section className="cardFlex">{cards}</section>
+      <MyExperience />
     </div>
   );
 }
