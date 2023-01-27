@@ -16,6 +16,7 @@ export default [
       reviewCount: 157,
     },
     location: "United States",
+    saved: true,
   },
   {
     id: 2,
@@ -27,6 +28,7 @@ export default [
       reviewCount: 21,
     },
     location: "Spain",
+    saved: true,
   },
   {
     id: 3,
@@ -38,6 +40,7 @@ export default [
       reviewCount: 63,
     },
     location: "South Korea",
+    saved: false,
   },
   {
     id: 4,
@@ -49,6 +52,7 @@ export default [
       reviewCount: 12,
     },
     location: "Mexico",
+    saved: true,
   },
   {
     id: 5,
@@ -60,6 +64,7 @@ export default [
       reviewCount: 14,
     },
     location: "Spain",
+    saved: true,
   },
   {
     id: 6,
@@ -71,5 +76,6 @@ export default [
       reviewCount: 45,
     },
     location: "Italy",
+    saved: false,
   },
 ];

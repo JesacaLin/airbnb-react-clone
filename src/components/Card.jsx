@@ -1,8 +1,13 @@
 import star from "../img/star.png";
+import heart from "../img/heart.png";
 
 export default function Card(props) {
   return (
-    <div>
+    <div className="card">
+      {/* SET CONDITIONAL RENDER */}
+      {props.saved === true && (
+        <img src={heart} alt="heart" className="cardHeart" />
+      )}
       <img src={props.img} alt="card pic" className="cardImage" />
       <div className="cardStats">
         <img src={star} alt="star rating" className="cardStar" />
