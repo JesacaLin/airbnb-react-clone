@@ -82,6 +82,9 @@ export default function LinkList() {
           <img src={oneArrow} alt="one arrow" className="oneArrow" />
         </div>
       </section>
+      <p className="cardTitle">
+        Plan a trip with help from local Hosts around the world
+      </p>
     </div>
   );
 }

@@ -1,25 +1,30 @@
-import { useState } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import LinkList from "./components/LinkList";
 import Card from "./components/Card";
-import cardImage from "./img/cardImage.png";
+import data from "./data";
 import "./App.css";
 
 function App() {
+  const cards = data.map((item) => {
+    return (
+      <Card
+        img={item.img}
+        id={item.id}
+        title={item.title}
+        price={item.price}
+        rating={item.stats.rating}
+        reviewCount={item.stats.reviewCount}
+        location={item.location}
+      />
+    );
+  });
   return (
     <div>
       <Navbar />
       <Hero />
       <LinkList />
-      <Card
-        img={cardImage}
-        rating={"5.0"}
-        reviewCount={6}
-        country="United States"
-        title="Plan The Perfect New York Vacation"
-        price={136}
-      />
+      <section className="cardFlex">{cards}</section>
     </div>
   );
 }

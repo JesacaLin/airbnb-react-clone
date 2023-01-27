@@ -129,13 +129,18 @@ span {
 }
 
 /* CARDS */
-.card {
+.cardFlex {
+  display: flex;
+  flex-wrap: nowrap;
+  column-gap: 1rem;
+  overflow-x: auto;
   padding: 0 5rem;
 }
 
 .cardTitle {
   font-size: 1.3rem;
   font-weight: 500;
+  padding: 0 5rem;
 }
 
 .cardImage {

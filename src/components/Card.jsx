@@ -2,16 +2,13 @@ import star from "../img/star.png";
 
 export default function Card(props) {
   return (
-    <div className="card">
-      <p className="cardTitle">
-        Plan a trip with help from local Hosts around the world
-      </p>
+    <div>
       <img src={props.img} alt="card pic" className="cardImage" />
-      <div cardName="cardStats">
+      <div className="cardStats">
         <img src={star} alt="star rating" className="cardStar" />
         <span className="cardRating">{props.rating}</span>
         <span className="cardInfo">({props.reviewCount}) </span>
-        <span className="cardInfo">{props.country}</span>
+        <span className="cardInfo">{props.location}</span>
       </div>
       <div>
         <p className="cardSubTitle">{props.title}</p>
