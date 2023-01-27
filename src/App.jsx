@@ -2,6 +2,7 @@ import { useState } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import LinkList from "./components/LinkList";
+import Card from "./components/Card";
 import "./App.css";
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <Navbar />
       <Hero />
       <LinkList />
+      <Card />
     </div>
   );
 }

@@ -10,14 +10,20 @@
 #root:after {
   box-sizing: inherit;
 }
+.parentDiv {
+  position: relative;
+  height: 100%;
+
+  top: 0;
+}
 
 nav {
-  /* box-sizing: border-box; */
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #dedcdc;
   position: sticky;
+  top: 0;
   height: 70px;
 }
 
@@ -42,7 +48,7 @@ nav {
 }
 
 h1 {
-  font-weight: 600;
+  font-weight: 700;
   margin: 2.5rem 0;
 }
 
@@ -64,7 +70,7 @@ h1 {
 }
 
 .experience {
-  border-radius: 20px;
+  border-radius: 15px;
 }
 
 /* LINKS SECTION */
@@ -120,4 +126,46 @@ span {
   font-size: 14px;
   line-height: 18px;
   color: #494949;
+}
+
+/* CARDS */
+.card {
+  padding: 0 5rem;
+}
+
+.cardTitle {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.cardImage {
+  border-radius: 15px;
+  width: 220px;
+  margin-bottom: 0.5rem;
+}
+/* 
+.cardStats {
+  padding-bottom: 1rem;
+} */
+
+.cardStar {
+  width: 12px;
+  margin-right: 0.4rem;
+}
+
+.cardRating {
+  font-weight: 400;
+  margin-right: 0.2rem;
+}
+
+.cardSubTitle {
+  width: 220px;
+  font-size: 1rem;
+  font-weight: 300;
+  word-wrap: break-word;
+  margin: 0.5rem 0;
+}
+
+.cardPrice {
+  font-weight: 500;
 }
