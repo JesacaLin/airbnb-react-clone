@@ -1,3 +1,5 @@
+//Imported states
+import { useState } from "react";
 //Imported components
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
